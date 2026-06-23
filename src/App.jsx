@@ -1,4 +1,4 @@
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import {
   certificates,
   digitalProjects,
@@ -218,6 +218,13 @@ function App() {
                     >
                       <Mail size={18} />
                       {profile.email}
+                    </a>
+                    <a
+                      href={`tel:${profile.phone}`}
+                      className="focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+                    >
+                      <Phone size={18} />
+                      {profile.phone}
                     </a>
                     <div className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 px-5 py-3 text-sm font-semibold text-white">
                       <MapPin size={18} />

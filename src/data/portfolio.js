@@ -1,3 +1,5 @@
+import powerBiPreview from '../assets/power-bi-preview.png';
+
 export const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Education', href: '#education' },
@@ -15,6 +17,7 @@ export const profile = {
     'I am interested in research, data analysis, and digital tools for solving economic, social, and business problems. My work focuses on applied research, policy-related topics, dashboard development, and decision-support tools.',
   email: 'tranha17122005@gmail.com',
   location: 'Hanoi, Vietnam',
+  phone: '0369128797',
 };
 
 export const education = {
@@ -111,6 +114,10 @@ export const digitalProjects = [
     title: 'Business Intelligence Dashboard for Enterprise Analysis',
     status: 'Academic Course Project',
     role: 'Dashboard Builder / Data Analyst',
+    previewImage: {
+      src: powerBiPreview,
+      alt: 'Power BI dashboard preview',
+    },
     description:
       'A Power BI dashboard project developed to analyze business performance and support data-driven decision-making for an enterprise case.',
     contributions: [
@@ -126,8 +133,14 @@ export const digitalProjects = [
       'Business Analysis',
     ],
     actions: [
-      { label: 'Dashboard Preview', href: null },
-      { label: 'Power BI File', href: null },
+      {
+        label: 'View Power BI Dashboard',
+        href: 'https://drive.google.com/file/d/1L5_GwdvB57shnNtu1F9meKMuBCZLQ5Mh/view?usp=sharing',
+      },
+      {
+        label: 'Open Power BI File',
+        href: 'https://drive.google.com/file/d/1L5_GwdvB57shnNtu1F9meKMuBCZLQ5Mh/view?usp=sharing',
+      },
     ],
   },
   {
@@ -143,7 +156,12 @@ export const digitalProjects = [
     ],
     tools: ['n8n', 'Workflow automation'],
     keywords: ['n8n', 'Automation', 'Decision Support', 'Local Business'],
-    actions: [{ label: 'n8n Workflow', href: null }],
+    actions: [
+      {
+        label: 'View n8n Workflow',
+        href: 'https://drive.google.com/file/d/1aOCxAzRi3cg-nkOKt37tLMecRuHNjeLd/view?usp=sharing',
+      },
+    ],
   },
 ];
 

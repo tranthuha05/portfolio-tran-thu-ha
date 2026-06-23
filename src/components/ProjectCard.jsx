@@ -41,6 +41,16 @@ function ActionButton({ action }) {
 export default function ProjectCard({ project }) {
   return (
     <article className="group flex h-full flex-col rounded-lg border border-line bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-teal/35 hover:shadow-soft">
+      {project.previewImage && (
+        <div className="mb-5 overflow-hidden rounded-md border border-line bg-mist">
+          <img
+            src={project.previewImage.src}
+            alt={project.previewImage.alt}
+            className="aspect-video w-full object-cover"
+          />
+        </div>
+      )}
+
       <div className="flex flex-1 flex-col">
         <div className="mb-5 flex flex-wrap gap-2">
           <Badge>{project.status}</Badge>
